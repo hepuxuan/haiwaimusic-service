@@ -10,7 +10,7 @@ import (
 import _ "github.com/go-sql-driver/mysql"
 
 func main() {
-	db, err := sql.Open("mysql", "root:password@tcp(localhost)/haiwaimusic?charset=utf8")
+	db, err := sql.Open("mysql", "root:password@tcp(localhost)/haiwaimusic?charset=utf8mb4")
 	if err != nil {
 		panic(err)
 	}
