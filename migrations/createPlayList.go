@@ -16,8 +16,8 @@ func CreatePlayList(db *sql.DB) {
 		"mid VARCHAR(255)," +
 		"song_id BIGINT," +
 		"image_id BIGINT," +
-		"INDEX (user_id)," +
-		"FOREIGN KEY (user_id) REFERENCES user(uuid) ON DELETE CASCADE" +
+		"INDEX (user_id)" +
+		//"FOREIGN KEY (user_id) REFERENCES user(uuid) ON DELETE CASCADE" +
 		")")
 
 	if err != nil {
